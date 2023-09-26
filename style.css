@@ -1,0 +1,290 @@
+* {
+  box-sizing: border-box;
+}
+
+
+/* CONTAINER 1 */
+
+.top-banner {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+  position: relative;
+}
+
+.container1 {
+  display: grid;
+  height: 600px;
+  text-align: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 150px 150px;
+  align-content: center;
+  position: relative;
+  line-height: 70px;
+}
+
+
+h1 {
+  font-size: 4rem;
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+  
+  
+}
+
+.topimg {
+  width: 250px;
+  border-radius: 100%;
+}
+
+/* CONTAINER 2 */
+
+.container2 {
+  display: grid;
+  height: 600px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 500px;
+  align-items: center;
+  align-content: center;
+  position: relative;
+}
+
+hr {
+  width: 30%;
+  stroke-dasharray: 40%;
+  rotate: 15deg;
+}
+
+.myimg {
+  width: 250px;
+  border-radius: 10%;
+}
+
+.myimgCON {
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+.sec2text {
+  display: grid;
+  justify-content: center;
+}
+
+/* CONTAINER 3 */
+
+.container3 {
+  display: grid;
+  height: 500px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 80px 200px 20px;
+  align-content: center;
+  text-align: center;
+  gap: 5px;
+  position: relative;
+}
+
+h4 {
+  font-size: 1em;
+  font-weight: bold;
+  font-style: italic;
+  padding-bottom: 50px;
+}
+
+.botmnote {
+  grid-area: 3/-3/ 4/-2;
+}
+
+.container3 div {
+  background-color: #d9dddc99;
+  align-items: center;
+  border-radius: 2%;
+}
+
+.conThree * {
+  margin: 0px;
+  line-height: 3;
+}
+
+/* CONTAINER 4 */
+
+.container4 {
+  display: grid;
+  height: 800px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 500px 50px;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  position: relative;
+}
+
+h3 {
+  font-size: 2rem;
+  margin-bottom: 0px;
+  position: relative;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.icontext {
+  padding-bottom: 10px;
+}
+
+.h3con4 {
+  margin: 5px 0px 0px 0px;
+  grid-area: 1/ 1/ 2/ 4;
+  font-size: 2rem;
+}
+
+.hrHOR {
+  rotate: 0deg;
+}
+
+.preProject {
+  width: 200px;
+  height: 300px;
+}
+
+/* CONTAINER 5 */
+
+.container5 {
+  display: grid;
+  height: 600px;
+  grid-template-columns: 1fr 1fr;
+  grid-row: 150px 400x;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+}
+
+.h3con5 {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 100px;
+  grid-area: 1/ 1/ 2/ 4;
+  font-size: 2rem;
+}
+
+.container5 > div {
+  display: grid;
+  justify-content: space-around;
+  line-height: 2;
+}
+
+.h4con5 {
+  padding-bottom: 0px;
+  margin-bottom: 30px;
+}
+
+.ulcon5 {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* CONTAINER 6 */
+
+.container6 {
+  display: grid;
+  height: 600px;
+  grid-template-rows: 200px 100px;
+  justify-content: center;
+  align-content: center;
+  border-bottom: 1px solid;
+  text-align: center;
+  position: relative;
+}
+
+a {
+  font-weight: bolder;
+  color: #545555;
+}
+
+@media (max-width: 964px) {
+  .topimg {
+    width: 150px;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  .container1 {
+    height: 400px;
+  }
+  .container2 {
+    grid-template-rows: 300px;
+    height: 500px;
+  }
+
+  .myimg {
+    width: 150px;
+    border-radius: 10%;
+  }
+
+  .container3 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 200px 50px 200px 30px;
+    height: 800px;
+  }
+  .uni {
+    grid-area: 2 /1 /3 /2;
+  }
+
+  .logo {
+    grid-area: 2 /2 /3 /3;
+  }
+
+  .skill {
+    grid-area: 3 /1 /4 /3;
+  }
+
+  .graphic {
+    grid-column: span 2;
+  }
+
+  .botmnote {
+    grid-area: 5 /1 /6 /3;
+  }
+
+  .container4 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 70px 300px 300px;
+    height: 800px;
+    text-align: center;
+  }
+
+  .iconttextTindog {
+    grid-area: 3 / 1 / 4 / 3;
+  }
+
+  .preProject {
+    width: 100px;
+    height: 150px;
+  }
+
+  h4 {
+    font-size: 1em;
+    font-weight: bold;
+    font-style: italic;
+    padding-bottom: 5px;
+    margin: 0px;
+  }
+
+  .container4 p {
+    padding: 0px;
+    margin: 0px;
+  }
+}
+
+
+h1, h2, h3, h4 {
+  font-family: 'Bodoni Moda', serif;
+}
+
+p, li {
+  font-family: 'Cardo', serif; 
+  font-style: italic;
+}
